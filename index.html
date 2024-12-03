@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roberto-Hotel & Resort Html Template</title>
+    <style>
+        *{
+            margin: 0vw;
+        }
+        body{
+            font-family: "Poppins", sans-serif;
+        }
+    #firstheader{
+        background-color: #0e2737;
+        
+        height: 8vh;
+        display: flex;
+    }
+    #firstheader img{
+        width: 1.3vw;
+        height: 2.5vh;
+        margin-top: 2.5vh;
+    }
+    #first1{
+        display: flex;
+        /* border: 1px solid black; */
+        margin-left: 10vw;
+        margin-right: 30vw;
+    }
+    #first1 p{
+        margin-left: 0.5vw;
+        margin-right: 3vw;
+        color: white;
+        margin-top: 2.5vh;
+    }
+
+    #first2 img{
+        padding-left:2vw ;
+    }
+    #second1{
+        /* border: 1px solid black; */
+        height: 13vh;
+    }
+    #logo{
+        margin-top: 3vh;
+        margin-left: 10vw;
+        /* border: 1px solid black; */
+        
+        
+    }
+    #secondheader{
+        position: relative;
+       width: 48vw;
+        /* background: pink; */
+        height: 8vh;
+        margin-top: -9.5vh;
+        margin-left: 30vw;
+        
+    }
+    #secondheader a{
+        font-size: 1.5vw;
+        margin-right: 3vw;
+        text-decoration: none;
+        color: black;
+        
+    }
+    #secondheader img{
+        width: 1.5vw;
+        /* border: 1px solid black; */
+        
+    }
+    #button button{
+        position: absolute;
+        top:-3.5vh;
+        height:11.5vh;
+        left: 50vw;
+        width: 12vw;
+        font-size: 1.5vw;
+        background: #1cc3b2;
+        color: white ;
+        border: none    ;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        
+    }
+    #button button:hover{
+        background: black;
+    }
+    
+   
+   
+    
+
+    
+    
+   
+
+
+
+
+
+    #bg{
+        background-image: url(pic.jpg);
+        background-size: 100%;
+        width: 98.5vw;
+        height: 120vh;
+        margin-bottom: 10vh;
+        justify-content: center;
+        /* border: 1px solid black; */
+        position: relative;
+
+    }
+    #bg2{
+        width: 98.5vw;
+        height: 120vh;
+        background-color: rgba(27, 50, 73, 0.774);
+        border: 1px solid black;
+
+   
+    }
+    #bgwrite {
+        /* border: 1px solid black; */
+        width: 60vw;
+        height: 40vh;
+        margin-left: 19vw;
+        margin-top: 38vh;
+    }
+    #bgwrite h5{
+        color: white;
+        font-size: 1.5vw;
+        text-align: center;
+    }
+    #bgwrite h1{
+        color: white;
+        font-size:6vw;
+        text-align: center;
+        margin-top: 7vh;
+        margin-bottom: 5vh;
+    }
+    #bgwrite button{
+        margin-left: 22.5vw;
+        height: 8vh;
+        width: 15vw;
+        font-size: 1.5vw;
+        color: white;
+        background-color: transparent;
+        border: 0.2vw solid  #1cc3b2;
+    }
+    #bgwrite button:hover{
+        background-color: #1cc3b2;
+        
+    }
+
+
+
+
+
+
+    #bgbox{
+        display: flex;
+        z-index: 10;
+        position: absolute;
+        /* border: 1px solid black; */
+        box-shadow: 0 2px 15px 2px rgba(0, 0, 0, 0.15);
+        background: white;
+        margin-top: -23vh;
+        width: 75vw;
+        margin-left: 12vw;
+        height: 25vh;
+        border-radius: 2vh;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    
+    #box1 input{
+        height: 8vh;
+        width: 13vw;
+        padding-left: 1vw;
+        border-radius: 1vh;
+        border: 2px solid #ebebeb;
+        font-family: inherit;
+
+    }
+    #box2 input{
+        height: 8vh;
+        font-family: inherit;
+        width: 13vw;
+        padding-left: 1vw;
+        border-radius: 1vh;
+        border: 2px solid #ebebeb;
+        ;
+    }
+    #box3 select{
+        width: 4vw;
+        height: 8vh;
+        border-radius: 1vh;
+        padding-left: 1vw;
+        border: 2px solid #ebebeb;
+
+    }
+    #box3 option{
+        color: black;
+    }
+    #box4 select{
+        width: 4vw;
+        height: 8vh;
+        border-radius: 1vh;
+        padding-left: 1vw;
+        border: 2px solid #ebebeb;
+
+    }
+    h2{
+        font-size: 1.5vw;
+    }
+    #box4 option{
+        color: black;
+        border: 2px solid #ebebeb;
+
+    }
+    #box5 select{
+        font-family: inherit;
+        width: 4vw;
+        height: 8vh;
+        border-radius: 1vh;
+        padding-left: 1vw;
+        border: 2px solid #ebebeb;
+
+    }
+    #box5 option{
+        color: black;
+    }
+    #box6 button{
+        margin-top: 4.11vh;
+        height:8vh ;
+        width: 15vw;
+        border: none;
+        background-color: #1cc3b2;
+        color: white;font-size: 1.2vw;
+
+    }
+    #firstpage{
+        width: 80vw;
+        /* border: 1px solid black; */
+        height:70vh;
+        display: flex;
+        margin-top: 35vh;
+        margin-left: 10vw;
+        
+    }
+    #firstpage #heading{
+        /* border: 1px solid black; */
+        width: 40vw;
+
+    }
+    #firstpage #img{
+        /* border: 1px solid black; */
+        width: 40vw;
+        display: flex;
+
+    }
+    #img #img1{
+        height: 62vh;
+        width: 20vw;
+        /* border: 1px solid black; */
+        overflow: hidden;
+       
+    }
+    #img1 img{
+        width: 25vw ;
+        /* display: block; */
+        border-radius: 1vh;
+        height: 30vh;
+        margin-bottom: 2vh;
+        margin-left: -50px;
+
+    }
+    #img1 img:hover{
+        transform: scale(1.2);
+        transition: 0.8;
+        
+    }
+    
+    #img2 {
+        width: 20vw;
+        height: 62vh;
+        margin-left: 2vw;
+        border-radius: 1vh;
+        overflow: hidden;
+        /* border: 1px solid black; */
+    }
+    #img2 img{
+        width: 20vw;
+        height: 62vh;
+        border-radius: 1vh;
+        margin-left: 1vw;
+        margin-left: -20px;
+    }
+    #img2 img:hover{
+        transform: scale(1.2);
+        transition: 0.8s;
+    }
+    #heading h5{
+        color: #1cc3b2;
+        font-size: 1.5vw;
+        margin-bottom: 3vh;
+    }
+    #heading h1{
+        font-size: 3vw;
+        color: #2a303b;
+    }
+    #heading p{
+        color: #636a76;
+        font-size: 1.6vw;
+        margin-top: 6vh;
+    }
+    #heading span{
+        color: #1cc3b2;
+    }
+    #bodyboxex{
+        margin-top: 10vh;
+        display: flex;
+        justify-content: space-around;
+        /* border: 1px solid black; */
+        width: 80vw;
+        margin-left: 10vw;
+    }
+    #bodyboxex .box1{
+        /* border: 1px solid black; */
+        text-align: center;
+    }
+    .box1{
+        box-shadow: 0 2px 15px 2px rgba(0, 0, 0, 0.15);
+        /* width: 10vw;
+        height: 20vh; */
+        padding: 2%;
+        margin-bottom: 5vh;
+        
+    }
+    .box1 img{
+       width: 3.5vw;
+       margin-bottom: 2vh;
+    }
+    .box1 h3:hover{
+          color: #1cc3b2;
+          transition: 500ms;
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <thead>
+    <div id="firstheader">
+       <div id="first1">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAzhJREFUWEftl0toE1EUhv8zU7QFFRWhtJ0U8bHwuSjFRZtEqiKoTWJcFK3oQgpSlHanVKFUFHHpA6EgKoovIrY2I7pwUcikii8EERFEwc40KoqlgljbdI4mPqiZSeaOSaGL3mXuf/7/49y5kzOESbZokvFgCsjpRJw71NtbVC4NlSVWb9adzAqxnxOoPKZWScRdACoJ1K77AkcKEZrLIyuQJxYNMeEagOI/BkzUPOANdE4klC1QRSx6gAipbmTuMwHbdV/w6kRBWYCUeM8WMN3IEWiCUG94g3cmAsoKFIu2g3DIIey7ybw24Q/1FRrKAlQR72kjpqMCQUNg9hv+0DMBrbDEpkNqE4jPCDoMzJozvODF8oYRQb2jzOYZim4A47Zj5W+BKdOSRE3gpajeSWcBKtOilTLw1qnw9/5NwxcMC2qFZLbXXtGinwHMcXDoKi15t/VJ9e5RoSRBUTagKwC2ZfVgvmz4nu4EdZiCOcIye6Cc7yI6Z3jrm0DEwikuhLZAS59Hpn0ZLP4AYHamF0lYpdcGH7nIcCXN+l+maNFjAPZbgJg7dX+o2VWKC3FWoPm93fOTRfJrANK/fjRqylgpctU9fd0L9dpwykN45Rw/FE09DnCrjdtDIzmzFnV1SdukSERWyoovAmgE6EGS5cB7/8aPIlQ5gebFe2ZOZ3pFQKn16OiCPjajyQLFHZISr7qUcUv7YdI6Y3XglROU48SoaGoYSA9p1sW4T/LYjvHHomjqWYB32agHiXi97g09zgXlCJQqVjS1BeAT9kY0SsyniaRTJszU8bbkCPwqEYf7vaG72TRCQKliT0w9ysRtTi0X2B9j8LYBX+i6nVYYKA2lRQ8y0pNkARa1Gr7AScuz6dZZiauNYL4AoMhtbYbelCAt7vfVvxn/u6sO/Sn09N1azqZ5HkB1HlCfIA9XGjUN3/IGShswk6Kpe39+BnQAmOsSbMRkXmM3Av9Xh8aH/3pXYR+B9giMLOlSAhqzfbnkDfQXLhKRPRUla9nkTQDqAKywvUXE7bo3dDjva+/ySKDci5QgOX0xJCwiYBkzZBPSk4QvoOb9YnQLk4++cEeWD8W42ikgp0b+AL/3/CUusw6uAAAAAElFTkSuQmCC"/>
+       
+        <p>(+92) 328 120 6447</p>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAeVJREFUWEftlz9Lw0AYxp+ridBZSyvt4DeooIMgCTjoYGlcCurkKPQDdNBZB8G14OhWoVNKBV2EFjcF+wl0aLChdS7Y6snVJk00IX/FP+SmwL3vc8/93vfCHcEvG+SX+UFkyKkiESFPhOav66kh93pMgXUCJJ2Sg8xTQCXAFTecKj2u5jqalqlk6YZcIQRbQRbymkspzhVR2rY0lGnKXQCzXkUDxvfagpSwM0QN4i0A2YCL2aWbtNuCpFfKVLJMU9YNJeNP02o/dQDE9gHKh2OMDIC3o2S8c6j25140TVeGtKB0s5YloGch0GpRkF1FyDM6MG7ekyGWvHh7yvunNaFyt7Q30Kh4NgTQ6pDyxY64wRp9NHzQMlFhGqnGRYIjgzJACp5KNg7uUkqKipivasnuaFlTSTdqBUJoGYB+qpiuq5KZm9gTLVdUjPo+DI3SHWixkI8TZOwVOyphGBprWNC6qS+wSWUld68tZNUrdr8Ov4SMel9oGSfdUAmRkFHKTMsLlW8yNOkt9mV1gtz84cMomZt1XMdEhpxQRYT+EaGG3APBjNOOQp2neG6Lkn5t/vlLPkhFEfI72iZNhsbPoBMAa5+vCKFSAcCeQTHQS45H6WF5U7U0FPaifvSip7QTtYjQnyP0Do5mEzT04Ei+AAAAAElFTkSuQmCC"/>
+        <p>Muhammadsaifattari997@gmail.com</p></div>
+        <div id="first2">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAVBJREFUWEftlz1KRDEUhb/jAsROLPzbgoq1lY1gI7gGEUGtbK1lLERE3IHgCsQViAquQNRKQdTCTvA4Aw6MwZlkeM8hRVLe3HfyvXNv3ktEZkOZ8VCAYhWpzSHbQ8ASMAt8AW/AK/Ai6TwG0p6vBcj2MnAATP21sKTkdZITu72h7Q3gsJcDAwOyPQPcxMoxSKAjYD0noEtgPgC6ajb0JnAt6TMGG85X6iHbd8B0IDonKVrGbqBVgR6AiUB8TNJTv87Usu1tPwLjBajtgO3dwI1tYDiI7QMfHbFnScepJUzuIdut3NYvod9xIWkx9aFBAJ00m3wtJ6AdSXs5Aa1KOqsdqCVoeyEQPgVGg9jKz7GjHb6V9P4vQKGo7XtgMqfvUAHqWfpSstjOKA4Vh6DaVbr0UEIPbQEjQV5DUucBLSbzaz75PNSXaoXkAhQzLzuHvgEEmZElvGCI1QAAAABJRU5ErkJggg=="/>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAqJJREFUWEftlluIjVEUx39/txe5hBeFRm55Gwl5EEoKTbmmCU9MkVJqKDQj5JbLozyYPHiRh0kyXnkjSYmUREheCC+SwrKXvlMzZ77z7f1xjkadXafz1V5r7d9ea+21lhhiS0OMhyZQLCJND/1zD5nZLGAPsBiYCzwG7gE9kvz79zKzEcBsSU/7Qw4KmZlNAJZJ6o3dpnrfzA6Fsw4DI2vobgGeAMuB3UCbpGcxoL3AGWC9pBupUGa2FbiSKg+czODHSPpY0cvz0DVgE/ADWCvpZuwQM5sEPAfGx2Sz/dvApxDGqe4tSV+KgNwrbZnAT+A80C3pa63DzGwzcDURpiL23vNM0otYyA6GHDheZfwN4KG8LskhBywz8xB3lgByiBWSXlXr5IVsaUjqOzWMvwMu+6//zczsErC9BNA+SWfz5POAhgGeRxsiB7jL/ab+mwksKgHUIckvMWjlAa0E7gP+7P15NmKtkXQrFci9sw54HZ7xjEbQhFxslfQoFeg0sL9BIG7Wn/g4SV5WkkLWCjyEho0mvaGF1MzP3G5vZkdDYexqkJd2SOqpZbvm+GFmHYA/zbF1BPsMTOlfmaN1qCJgZquAUYBX4fY6QR0LhbW7yFaRh+YDD+oEUknmFkkf/gjIlczsArCrTlDtkqL9rnCENTPfP5f1sb/huigp6WJJM7WZLQB83pkHLClJ1udtSNK3FL1UoOHAzlCbjgATUwxnMh6ibZK+p+oUJbXPvNO8zIfXdgKYk2rU0y/T6ZLk38lrAJCZrc7axnSvF4B3/rLLe6An8N2yii6f1+3dEwfCML4xzNajSxj14d0nhFNF02XMXlHIvCj6+OFzzkKgBZicQfqk9xLwf+/afZLexg5L2U9K6hRD9ZJpAsU82fTQf+ehX3sdvCV/aQn+AAAAAElFTkSuQmCC"/>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAoBJREFUWEftl82rTlEUxn8PCZEkUfJRBooiExMGBgwMzCQDmRBKIgx8XCGR7oBIDBBlQNdfYHRlIOIaXFImyjdFUhIKy1k6p+7HOWfvfd731ju4q+5oP+tZv3efvdbeV3RYqMN4GAUKfZGWdsjMVgHLgbF5od/AHUn3QoWr1hsBmdl64DCwpML4AdAlqTcVLAnIzFx/E9gQWeiUpEOR2v+yVKAu4ERKAWCjpBuxOdFAZjYfeA6MizXPdd+BBZLex+SlAJ0B9sSYlmi6JR2IyU0BeggsizEt0fRK8o4MRgrQa2BO0LFc0C9paUxuCtBHYGaMaYnmqaSqETFIngL0CpjbEKhPUtTnTgF6AixuCHRfkk/0YFQCmdk84BzgIHeBS4C3fpN4BOwH1gALge2SPpQZ1QHtyoGaAIRyHMh/4LCoA5oCnAY2AeNDFSLXvwJXgOOSviUBFWIzmw3sAA5GFq2S7c0+V09oYkcdajPzHfrZItAESb9CHrFAu4GzIbPA+k5JF0IeQSAz89nzDJgcMgusfwYWSfpUp6sFMrMZ/gJ0oxZhivTHwGpJfrhLo67LVmQgt7L5M6tNMIXNC2CdpP5gl5nZRGBtPsA2txlkoN1f4CLgT9zbkn4Ui4N2yMy25hN5BFmGWW+TdLkKyNvbh6G/maePMJUf8h5g38BxUHeG/Oz4/eNXSDvjKnBE0rvgGRoqMDO/3f1yfQm8yW/7qYl0bwH/80vV3+MrJfUld1lZgpmNyWaS/092NC9Qx+bddDJ7IVyX9Cf2RwQHYwWY520BuoFpQzQ+Y44B5yV5NyVFI6CigplNysEKqC/AtaqbPIasJaCYAqmaUaDQjnXcDv0DIiKoJXZNXXAAAAAASUVORK5CYII="/>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAA/tJREFUWEftl1uIl1UUxX+ri1LRS1FWFER0V7SCiCKwpKiM6EG7IiJhQloQWVDSRbMoKirCkm6EGF0spUAwVEoCu5ChpZmRQVAUVI8Z0W171nC+4fOb7zYzPcyD523Of5991uy9ztrrE2NsaYzhYT+gro70rlBETALOBk4EDuxKnH//F/ge2CppR58znYAi4gbgQeDkPglbYr4F7pW0qi1PI6CIOBZYAVw6SiDV4xtS1eZI+qkubxug94DL8qGPgFeAz4Edkv7uAzIixgNTgPOA+cDp+dw6SdN7A4qIGcDb+cAiSY/0AdAWExHjgKeBW3LcTEmrq2dqKxQR7rc5s0rSdSMFExEXAzcCE4C1ucpbgMnAN5KKig1eMQRQRJwJfJUjpkr6cBSAFgDLym2KiFnAyrx3gqQfy/nrAJXbNa6JLxFxOLAQOB84CwhgG/AJ8LikPRHh6r6RL1whaU5EuPLugNdVkly51gq5x88Bv0k6qq46EXFJfoHHNVTvB2C2pE1ZNo521SVtjIjDgN/zuQWSfFcroLuAx4Ddkk6pXhgRFwEflPbfB74EDkqcc7unlX67UNLmco6IcFf+y3v3SHq0C9B9WQi3SzL5Bldu007geFfQhJVkXSnHWCpeA47IKj1R0h+VmH+y2t8vaWkXoMWJDw8AWySdW0k0F3gx702XtK6hpTOBt/Jvbl1B4oGtiLCOuaK9AC1xoMkpyYQt//cvAzclwfxY0gUN/Cku3ZrJvlySRbGc50/AotkLkOeW2/aFJL+ecqKvs9ouk3RbB6AXgJsb8uxJPD3U1JDkbgyuumdftGyXpDMqgHYBpwHPSrq1A9DzwDxgp6SJlTx+ZX5tSyW5G70A1SV6Hbi+rp1VcBFhTfIcWylpdgWQSX5I2lssyRQZMaC7U++LuTZE1IqsEXEt8Gb++w5JT1UA/QUcbGpIeqgLkHvqttW17BhPe+BI4NekVbMSuddXLrsizcFX87P/2XMrtdcSMbAi4oAExMbNa8jgruPQooT+YeA7SUNMWURcnuxE+bm3CeM0SWURNSCT2aT2Wijpya4K/a+jo4Zb5dExX9LyLkBXJ/14Jw/L8R3D1WPG5ste2+Ngn+FaBZNbdpKrn3+bkabBmi5A9ijWG69R2Y8GQGX7MUlSYXUGwrsM2npJhY2tyz+svYjwuPgsK/gvqV02bvusJkBXZofnYOvEkqSo9jsjXjUWttYat5l8f65ckxF8mib8S9nk2wV4Wneuksn3kL699Cm1HTinLk8bID/PJ0qmvBNAzwC7AL+uQW1qJXXNMzWHnkke59SeFzaF7U5O8U5J77bl6fxyLQ6PmU/pUVZl2Md7V2jYmUd4YD+grsLtBSWSmjRewLNTAAAAAElFTkSuQmCC"/>
+        </div>
+
+    </div>
+    <div id="second1">
+        <img id="logo" src="logo.png.webp" alt="">
+    </div>
+    
+    <div id="secondheader">
+        <!-- <div id="second2"> -->
+            
+        <a href="">Home</a>
+        <a href="">Rooms</a>
+        <a href="">About Us</a>
+        <a href="">pages</a>
+        <a href="">News</a>
+        <a href="">Contact</a>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAwRJREFUWEftl1moT1EUxn+3RJEHEiFkyPBsehDJUBTJlCGR6cHNm0QSD5IhT8qY6cFQhiKSlMylDHkhQ0RJyphQZNqf1tG2nXv2Pv9/3ftX1ts5e69vf2etvdb6Th01ZnU1xod/mlBbYAowAegFdLLoPgceACeAY8DbaqKeEqGuwEpgDtA8cthnYDewDnhWCbEYoakuGvsTiIRnfwKmAafKkioitAxYHwBeBY4Dl4H7ttYXGAZMBgYF+xcB28uQaojQDOCgB3QPmAtci4CPcXdrp0tbF9v3AxjniJ5OJZVHqCdwx92DFgZy20VkJPAmEbQjcMF9UG/b/x4Q5qsU/zxCqpRJ5vwIGAy8TgHz9nQGbgId7N02oD4FIyTUD7jrOQ50Ib+RApSzR6k6ae+/AopcNEohIZX3GgPR5Z1YIZnM7bqrtAH2MA/YG8MLCV0BhpjTTOBQDCCyvgTYZHsOWysodAkJPXFf0c08VCkVNTfvxP5eym+5FOq5FKGPQEvzUJV9iQFE1tt41fkO0HMpQh+AVubRGtBzNSYMlb3sJdA+Bham7KENTvn1saEZwyha96v2outPw2NgIaFzwAhzWmCDMoZRtK7RsdU2JPWikNBSd4c2GsAZYGw1bIDzXlQWA1tieCEh6RylLbOhgFpBJTYaOGuOKhZhv4gB5Y2OIybE5PvUGlu0wwYHSbypKWYibjmwIUZG63mEetj4qGa4KlUqCtljQJc7qYWkyg/NNynG2FyT/JD+yZqrCKlQ9F7zLGpFAm0FsDZAuGQCTfdKOlr++nqVswRaQ534KDAd+BZjFJOwisouoFkMKFiX0Jf8GOW91yyT8PtehBUjJN/uDmQVMCuBmNKi0l5tHVqqU5HJ7IC7U7OLSKUQysDa2bQeD+jiq4JEQJdWQ1liTvLVbxvC32ckMhz9lSx0pCVv/7IyhEpm7ff2PFJ7gPlNRShrLzssMhmP3FHSGBHyA6GUKl0y/Uyqkv+wxiakwzeb8MtmZpMTKryLTRGh/4QqbQ+//GouZT8BH3WCJWJo578AAAAASUVORK5CYII="/>
+        <div id="button"><button>Book Now &#8594;</button></div>
+        <!-- </div> -->
+        
+    </div>
+</thead>
+<tbody>
+     <div id="bg">
+        <div id="bg2">
+        <div id="bgwrite">
+        <h5>HOTEL & RESORT</h5>
+        <h1>Welcome To Reborto</h1>
+        <button>Discover Now</button></div>
+        
+        </div>
+     </div>
+
+<div id="bgbox">
+    <div id="box1">
+      <h2>
+        Check In
+      </h2>
+      <input type="date">
+    </div>
+    <div id="box2">
+         <h2>
+        Check Out
+      </h2>
+      <input type="date">
+    </div>
+    <div id="box3">
+        <h2>Rooms</h2>
+        <select name="" id="">
+            <option value="">01</option>
+            <option value="">02</option>
+            <option value="">03</option>
+            <option value="">04</option>
+            <option value="">05</option>
+            <option value="">06</option>
+            <option value="">07</option>
+            <option value="">08</option>
+            <option value="">09</option>
+            <option value="">10</option>
+            
+        </select>
+    </div>
+    <div id="box4">
+        <h2>Adult</h2>
+        <select name="" id="">
+            <option value="">01</option>
+            <option value="">02</option>
+            <option value="">03</option>
+            <option value="">04</option>
+            <option value="">05</option>
+            <option value="">06</option>
+            <option value="">07</option>
+            <option value="">08</option>
+            <option value="">09</option>
+            <option value="">10</option>
+            
+        </select>
+    </div>
+    <div id="box5">
+        <h2>Childern</h2>
+        <select name="" id="">
+            <option value="">01</option>
+            <option value="">02</option>
+            <option value="">03</option>
+            <option value="">04</option>
+            <option value="">05</option>
+            <option value="">06</option>
+            <option value="">07</option>
+            <option value="">08</option>
+            <option value="">09</option>
+            <option value="">10</option>
+            
+        </select>
+    </div>
+    <div id="box6">
+        <button>Check Availability</button>
+    </div>
+</div>
+<div id="firstpage">
+    <div id="heading">
+        <h5>About Us</h5>
+        <h1>Welcome to <br>
+            Roberto Hotel Luxury</h1>
+            <p>With over 340 hotels worldwide, NH Hotel Group offers <br>
+                 a wide variety of hotels catering for a perfect stay no <br>
+                  matter where your destination.</p>
+                  <p>Manager: <span>Michen Taylor</span></p>
+                  <img style="margin-top: 3vh;" src="signature.png.webp" alt="">
+    </div>
+    <div id="img">
+        <div id="img1">
+            <img src="1body" alt="">
+            <img src="3body" alt="">
+        </div>
+        <div id="img2">
+           <img src="2body" alt=""> 
+        </div>
+    </div>
+</div>
+<div id="bodyboxex">
+    <div class="box1">
+        <img src="handle    " alt="">
+        <h3>Transportion</h3>
+    </div>
+    <div  class="box1">
+        <img style="margin-bottom: 4vh;" src="flowers" alt="">
+        <h3>Reiseservice</h3>
+    </div>
+    <div class="box1">
+        <img src="spon" alt="">
+        <h3>Spa Relaxtion</h3>
+    </div>
+    <div class="box1">
+        <img src="glass" alt="">
+        <h3>Restaurant</h3>
+    </div>
+    <div class="box1">
+        <img src="handle" alt="">
+        <h3>Bar & Drink</h3>
+    </div>
+</div>
+
+</tbody>
+
+</body>
+</html>
